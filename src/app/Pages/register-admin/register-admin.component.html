@@ -1,0 +1,22 @@
+<div>
+    <h2>Enregistrer un nouvel administrateur</h2>
+    <form (ngSubmit)="registerAdmin()">
+      <label>
+        Email :
+        <input type="email" [(ngModel)]="email" name="email" required>
+      </label>
+      <br>
+      <label>
+        Mot de passe :
+        <input type="password" [(ngModel)]="password" name="password" required>
+      </label>
+      <br>
+      <label>
+        Nom :
+        <input type="text" [(ngModel)]="nom" name="nom" required>
+      </label>
+      <br>
+      <button type="submit">Enregistrer</button>
+    </form>
+  </div>
+  

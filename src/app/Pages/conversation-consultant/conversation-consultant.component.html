@@ -1,0 +1,10 @@
+<div>
+  <h2>Liste des Conversations Consultant</h2>
+  <ul>
+    <li *ngFor="let conversation of conversations">
+      <a href="javascript:void(0)" (click)="displayChat(conversation.idConversation,conversation.idSender , conversation.nomConsultant)">
+        {{ conversation.nomAdmin }}
+      </a>
+    </li>
+  </ul>
+</div>
